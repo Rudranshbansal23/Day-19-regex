@@ -17,4 +17,16 @@ public class UserValid {
 			System.out.println("First Name Invalid");
 		}
 	}
+
+	public void checkLastName() {
+		// Method To Check Last Name With Regex Start With Cap And 3 Min. Character
+		System.out.println("Enter the first Name :");
+		String lastName = scan.nextLine();
+
+		if (Pattern.matches("^[A-Z][a-z]{2,}", lastName)) {
+			System.out.println("Last Name is Valid");
+		} else {
+			System.out.println("Last Name Invalid");
+		}
+	}
 }
