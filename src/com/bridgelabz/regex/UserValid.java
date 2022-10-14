@@ -42,4 +42,16 @@ public class UserValid {
 
 		}
 	}
+
+	public void checkMobileNumber() {
+		// check Mobile Number 91 country code
+		System.out.println("Enter The Mobile Number With County Code : ");
+		String mobileNumber = scan.nextLine();
+
+		if (Pattern.matches("^[91]+(\\s)+[6-9][1-9]{9}$", mobileNumber)) {
+			System.out.println("Valid Mobile Number");
+		} else {
+			System.out.println("Invalid Mobile Number");
+		}
+	}
 }
